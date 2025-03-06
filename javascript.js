@@ -20,7 +20,7 @@ function createBoard(size) {
 
     for (let i = 0; i < numDivs; i++) {
         let div = document.createElement("div");
-        div.addEventListener("mouseover", colorDiv());
+        div.addEventListener("mouseover", colorDiv);
         board.insertAdjacentElement("beforeend", div);
     }
 }
@@ -41,10 +41,10 @@ function colorDiv() {
     if (color == "rainbow") {
         this.style.backgroundColor = `hsl(${Math.random() * 360}, 100%, 50%)`;
     } else {
-        this.style.backgroundColor = "black";
+        this.style.backgroundColor = 'black';
     }
 }
 
 function setColor(colorChoice) {
-    let color = colorChoice;
+    color = colorChoice;
 }
