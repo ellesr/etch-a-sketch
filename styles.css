@@ -29,3 +29,30 @@ body {
     display: grid;
     border: 1px solid black;
 }
+
+button {
+    padding: 10px 25px;
+    border-radius: 8px;
+    border-color: white;
+    font-size: 20px;
+}
+
+#black {
+    background-color: black;
+    color: white;
+}
+
+#rainbow {
+    background-color: #ff00d0;
+    color: rgb(255, 255, 255);
+}
+
+#reset {
+    background-color: rgb(0, 98, 255);
+    color: white;
+}
+
+#pop-up {
+    background-color: rgb(255, 0, 0);
+    color: white;
+}
