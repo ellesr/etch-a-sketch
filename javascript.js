@@ -1,6 +1,11 @@
 document.addEventListener("DOMContentLoaded", () => {
-    createBoard(32);
-    getSize();
+    createBoard(16);
+
+    let btnPopup = document.querySelector("#pop-up");
+    btnPopup.addEventListener("click", () => {
+        let size = getSize();
+        createBoard(size);
+    });
 });
 
 function createBoard(size) {
@@ -25,5 +30,6 @@ function getSize() {
         alert("Please enter a number between 0 and 100.");
     } else {
         alert("Now you play!");
+        return input;
     }
 }
