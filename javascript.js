@@ -18,6 +18,7 @@ function createBoard(size) {
 
     for (let i = 0; i < numDivs; i++) {
         let div = document.createElement("div");
+        div.addEventListener("mouseover", colorDiv());
         board.insertAdjacentElement("beforeend", div);
     }
 }
@@ -33,3 +34,4 @@ function getSize() {
         return input;
     }
 }
+
