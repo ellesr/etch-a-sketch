@@ -1,3 +1,5 @@
+let color = "black";
+
 document.addEventListener("DOMContentLoaded", () => {
     createBoard(16);
 
@@ -35,3 +37,14 @@ function getSize() {
     }
 }
 
+function colorDiv() {
+    if (color == "rainbow") {
+        this.style.backgroundColor = `hsl(${Math.random() * 360}, 100%, 50%)`;
+    } else {
+        this.style.backgroundColor = "black";
+    }
+}
+
+function setColor(colorChoice) {
+    let color = colorChoice;
+}
